@@ -1,0 +1,10 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+xbox:
+  title: XboxSeriesX
+  description: Esta en buen estado pero tiene un raspon
+  price: 500
+
+nintendo:
+  title: Nintendo Swithc
+  description: Le falla un poco la batería 
+  price: 200
