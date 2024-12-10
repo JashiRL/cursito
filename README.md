@@ -56,3 +56,9 @@ Productos que se van a relleenar en la base de datos para neustros test
 asegurate bien de que todo este escrito como debe de ser
 
 se realizo un partial dentro de productos porque a lo que entendí no debemos de repetir codigo al mismo nivel de los archivos 
+
+17 con esto de crear el partial para evitar usarlo en el edit.html es un concepto llamado refactorizar el codigo y aun más especifico el principio de software llamado dry dont repeat yourself, a manera de resumen, es que no repitamos  codigo para asi no tener tanto codigo duplicado en muchos sitios o archivos.
+
+18. para poder actualizxar el producto lo que realizamos es una ruta de tipo patch para poder actualizar los recursos exixtentes, en este caso para poder actuzalizar nuestros productos.
+
+me han estado dando errores con los test, se que tiene qu ever con el redirect_to product path pero no he podido conseguir corregir el error

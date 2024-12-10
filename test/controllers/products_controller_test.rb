@@ -51,6 +51,32 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
     assert_select "form"  # de esta manera nos cercioramos que el producto si recibe un formulario ?
   end
-end
 
-# este teste se va anecargar de revisar si renderiza todos los procutos
+  test "allow to update a  product" do
+    patch product_path(products(:xbox)), params: {
+      product: {
+        price: 600
+      }
+    }
+
+    assert_redirected_to products_path
+    assert_equal flash[:notice], "Tu producto se ha actualizado correctamente"
+  end
+
+  test "does not allow to update a  product" do
+    patch product_path(products(:xbox)), params: {
+      product: {
+        price: nil
+      }
+    }
+
+    assert_response :unprocessable_entity
+  end
+  test "can delete products " do
+    assert_difference("Product.count", -1) do
+    delete product_path(products(:nintendo))
+    end
+    assert_redirected_to products_path
+    assert_equal flash[:notice], "Tu producto se ha eliminado correctamente"
+  end
+end
