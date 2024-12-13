@@ -1,13 +1,16 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-  delete "/products/:id", to: "products#destroy"
-  patch "/products/:id", to: "products#update"
-  # esta peticion de tipo patch para realizar cambios parciales a un recurso existente
-  post "/products", to: "products#create"
-  get "/products/new", to: "products#new", as: :new_product
-  get "/products", to: "products#index"
-  get "/products/:id", to: "products#show", as: :product
-  get "/products/:id/edit", to: "products#edit", as: :edit_product
+   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+   # delete "/products/:id", to: "products#destroy"
+   # patch "/products/:id", to: "products#update"
+   # # esta peticion de tipo patch para realizar cambios parciales a un recurso existente
+   # post "/products", to: "products#create"
+   # get "/products/new", to: "products#new", as: :new_product
+   # get "/products", to: "products#index"
+   # get "/products/:id", to: "products#show", as: :product
+   # get "/products/:id/edit", to: "products#edit", as: :edit_product
+   # CON LA RESOURCES nosotros podemos realizar todas las acciones dce CRUD
+   # de una sola vez
+   resources :products, path: "/"
 
   # show mostrar un unico producto en conccreto
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

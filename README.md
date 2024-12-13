@@ -62,3 +62,6 @@ se realizo un partial dentro de productos porque a lo que entendí no debemos de
 18. para poder actualizxar el producto lo que realizamos es una ruta de tipo patch para poder actualizar los recursos exixtentes, en este caso para poder actuzalizar nuestros productos.
 
 me han estado dando errores con los test, se que tiene qu ever con el redirect_to product path pero no he podido conseguir corregir el error
+
+
+para que se muestre una imagen es necesario poner el image_tag y seleccionar nuestra varaible que contiene la informacion de los porductos, porque ahí se esta cargando el parametro de la imagen, además si no todos los productos tienen una imagen pues es ahí donde podría tiarnos errores la pagina
