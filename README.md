@@ -65,3 +65,5 @@ me han estado dando errores con los test, se que tiene qu ever con el redirect_t
 
 
 para que se muestre una imagen es necesario poner el image_tag y seleccionar nuestra varaible que contiene la informacion de los porductos, porque ahí se esta cargando el parametro de la imagen, además si no todos los productos tienen una imagen pues es ahí donde podría tiarnos errores la pagina
+
+Con refactorizar nos referimos a que realizaremos un cambio en el codigo para simplificar las funciones y así poder tener un funcionamiento más pulcro 
