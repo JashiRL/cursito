@@ -2,9 +2,9 @@ es:
   common:
     confirm: "Estas Seguro?"
   products:
-  edit:
-    title: "Editar Producto"
-  new:
-    title: "añadir Producto"
-  index:
-    title: "Lista de Productos:"
+    edit:
+      title: "Editar Producto"
+    new:
+      title: "añadir Producto"
+    index:
+      title: "Lista de Productos:"
