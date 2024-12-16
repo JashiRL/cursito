@@ -1,4 +1,26 @@
 es:
+  activerecord:
+    models:
+      product: Producto
+    attributes:
+      product:
+        title: "Nombre"
+        description: "Descripción"
+        price: "Precio"
+        photo: "Foto"
+    errors:
+      models:
+        product:
+          attributes:
+            title:
+              blank: "No puede estar vacío"
+            description:
+              blank: "No puede estar en blanco"
+            price:
+              blank: "No puede estar en blanco"
+              not_a_number: "Debe ser un número"
+            photo:
+              blank: "No puede estar en blanco"
   common:
     confirm: "Estas Seguro?"
   products:
