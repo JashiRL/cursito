@@ -17,7 +17,7 @@ class ProductsController < ApplicationController
 
     # pp @product esto es para mostarr el contenido de una varaible en pantalla
     if @product.save
-      redirect_to products_path, notice: "Se agrego correctamente el producto"
+      redirect_to products_path, notice: t("products.create.success")
     else
       render :new, status: :unprocessable_entity
     end
@@ -30,7 +30,7 @@ class ProductsController < ApplicationController
 
   def update
     if product.update(product_params)
-      redirect_to products_path, notice: "Tu producto se ha actualizado correctamente"
+      redirect_to products_path, notice: t("products.update.updated")
     else
       render :edit, status: :unprocessable_entity
     end
@@ -38,7 +38,7 @@ class ProductsController < ApplicationController
 
   def destroy
     product.destroy
-    redirect_to products_path, notice: "Tu producto se ha eliminado correctamente", status: :see_other
+    redirect_to products_path, notice: t("products.destroy.destroyed"), status: :see_other
   end
 
   private

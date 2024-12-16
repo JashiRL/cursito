@@ -8,3 +8,9 @@ es:
       title: "añadir Producto"
     index:
       title: "Lista de Productos:"
+    create:
+      success: "Se agrego correctamente el producto"
+    update:
+      updated: "Se actualizo correctamente el producto"
+    destroy:
+      destroyed: "Se elimino correctamente el producto"

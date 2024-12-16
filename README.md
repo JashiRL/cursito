@@ -70,3 +70,4 @@ Con refactorizar nos referimos a que realizaremos un cambio en el codigo para si
 
 ### en config 
 viene la conmnfiguracio de nuestra apliacion en  el archivo application.rb  podemos declarar idiomas disponibles dentro de nuestra aplicacion entre otras cosas
+para poder corregir el problema con la traduccion lo que realizamos fue especificar la ruta de la traduccion al mandar llamar el "metodo o la traduccion" tammbien tenia unos errores con la idetnacion dentro de la definicion del lenguaje
