@@ -76,3 +76,14 @@ para poder corregir el problema con la traduccion lo que realizamos fue especifi
 ----------------------------------------------------------------
 
 para poder saber el idioma en el que esta puesto el navegador de la persona te puedes ir a la aprte de red o network con f12 y de ahi a donde estan todas las peticiones picas a localhost y buscas el apartado donde dice accepted language
+
+
+### agregar un filtro para tipo de producto
+
+para poder agregar la categorizacion de productos a la pagina we must type:
+
+```bash
+rails generate scaffold Category name:string
+```
+
+la generacion de codigo con scaffold crea, tests, cotnrollers, partials, vistas, todo lo relacionado a caetegorias, una de rtutas incluso fixtures, una tabal con datos para las categorias netre más cosas
